@@ -19,3 +19,16 @@ Route::get('admin', function()
 {
 	return View::make('admin/admin');
 });
+
+Route::get('slide', function()
+{
+	return View::make('users.slide');
+});
+
+//Route::get('calendario', function()
+//{
+//	return View::make('users.calendario');
+//});
+
+Route::resource('calendario','CalendarioController');
+

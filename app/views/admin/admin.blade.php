@@ -63,14 +63,14 @@
               	  <h5 class="centered">U.A.T.F.</h5>
               	  	
                   <li class="mt">
-                      <a href="index.html">
+                      <a href="{{ URL::action('CalendarioController@index') }}">
                           <i class="fa fa-th"></i>
                           <span>CALENDARIO DE VIAJES</span>
                       </a>
                   </li>
 
                   <li class="sub-menu">
-                      <a href="javascript:;" >
+                      <a class="active" href="javascript:;" >
                           <i class="fa fa-desktop"></i>
                           <span>INICIA SECION</span>
                       </a>
@@ -82,7 +82,7 @@
                   </li>
 
                   <li class="sub-menu">
-                      <a class="active" href="javascript:;" >
+                      <a  href="javascript:;" >
                           <i class="fa fa-cogs"></i>
                           <span>Components</span>
                       </a>
@@ -145,45 +145,16 @@
       <!--main content start-->
       <section id="main-content">
           <section class="wrapper">
-          	<h3><i class="fa fa-angle-right"></i> Calendario de Viajes</h3>
-              <!-- page start-->
-              <div class="row mt">
-                  <aside class="col-lg-3 mt">
-                      <h4><i class="fa fa-angle-right"></i> Reserve las fechas de viaje </h4>
-                      <div id="external-events">
-                          <div class="external-event label label-warning">Viajes Aprobados</div>
-                          <div class="external-event label label-danger">Reservar dias de Viaje</div>
-                          
-                          <div class="external-event label label-success">Veajes que se realizan </div>
-                          <p class="drop-after">
-                              <input type="checkbox" id="drop-remove">
-                              Borrar Reservas
-                          </p>
-                      </div>
-                  </aside>
-                  <aside class="col-lg-9 mt">
-                      <section class="panel">
-                          <div class="panel-body">
-                              <div id="calendar" class="has-toolbar"></div>
-                          </div>
-                      </section>
-                  </aside>
-              </div>
+            <div class="col-md-12 mt">
+                
+                @yield('content')
+            </div>
+          
               <!-- page end-->
-		</section><! --/wrapper -->
+	        </section><! --/wrapper -->
       </section><!-- /MAIN CONTENT -->
 
-      <!--main content end-->
-      <!--footer start-->
-      <footer class="site-footer">
-          <div class="text-center">
-              UATF - 2016
-              <a href="calendar.html#" class="go-top">
-                  <i class="fa fa-angle-up"></i>
-              </a>
-          </div>
-      </footer>
-      <!--footer end-->
+      
   </section>
 
     <!-- js placed at the end of the document so the pages load faster -->
