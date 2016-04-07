@@ -41,7 +41,7 @@
             <!--logo start-->
             <footer class="site-footer">
                 <div class="text-center">
-                  <a href="index.html" class="logo"><b><i>Sistema Integrado Dpto. de Infraestructura</i></b></a>
+                  <a href="{{ URL::action('AdminController@index') }}" class="logo"><b><i>Sistema Integrado Dpto. de Infraestructura</i></b></a>
                 </div>
             </footer>
             <!--logo end-->
@@ -59,7 +59,7 @@
               <br>
               <ul class="sidebar-menu" id="nav-accordion">
               
-              	  <p class="centered"><a href="profile.html"><img src="assets/img/uatf.jpg" class="img-circle" width="90"></a></p>
+              	  <p class="centered"><a href="http://www.uatf.edu.bo" target="_blank" ><img src="assets/img/uatf.jpg" class="img-circle" width="90" ></a></p>
               	  <h5 class="centered">U.A.T.F.</h5>
               	  	
                   <li class="mt">
@@ -75,9 +75,9 @@
                           <span>INICIA SECION</span>
                       </a>
                       <ul class="sub">
-                          <li><a  href="general.html">Autoridades</a></li>
-                          <li><a  href="buttons.html">Encargado e automotores</a></li>
-                          <li><a  href="panels.html">Docentes</a></li>
+                          <li><a  href="{{ URL::action('LoginController@showLogin') }}">Autoridades</a></li>
+                          <li><a  href="{{ URL::action('LoginController@showLogin') }}">Encargado e automotores</a></li>
+                          <li><a  href="{{ URL::action('LoginController@showLogin') }}">Docentes</a></li>
                       </ul>
                   </li>
 
